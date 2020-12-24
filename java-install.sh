@@ -1,5 +1,7 @@
 #Script writed by : https:github.com/jaweewo
 #!/bin/bash
+echo "Installing dependencies"
+apt install wget
 cd /opt
 echo "Moving to opt folder"
 echo "Proceeding to download Java 8 update 271"
@@ -27,9 +29,12 @@ alternatives --set javac /opt/jdk1.8.0_271/bin/javac
 
 echo "Installation suceeded"
 echo "Testing java version"
+slep 2
 java -version
+echo "###########################################"
 echo "Remember to introduce environment variables"
 echo "Write them inside '/etc/bashrc'" 
+echo "###########################################"
 echo "export JAVA_HOME=/opt/jdk1.8.0_271"
 echo "export JRE_HOME=/opt/jdk1.8.0_271/jre"
 echo 'export PATH=$PATH:/opt/jdk1.8.0_271/bin:/opt/jdk1.8.0_271/jre/bin'
