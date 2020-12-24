@@ -1,5 +1,7 @@
 #Script writed by : https:github.com/jaweewo
 #!/bin/bash
+echo "Installing dependencies"
+apt install wget
 cd /opt
 echo "Moving to opt folder"
 echo "Proceeding to download Java 8 update 271"
